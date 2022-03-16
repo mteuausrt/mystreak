@@ -1,0 +1,95 @@
+*{
+	user-select: none;
+}
+
+body{
+	overflow-x:hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f0f0f0;
+}
+
+.container{
+	height: 100vh;
+	background: url("greek_gods.jpg") no-repeat;
+	min-width: 100px;
+	padding: 50px;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	text-align: center;
+	min-height: 900px;
+}
+
+
+.container h1{
+	color:rgb(255, 255, 255);
+	font-weight: bolder;
+	font-size: 2.7rem;
+}
+
+.big-text, span{
+	color:rgb(243, 243, 243);
+}
+
+.countdown-container{
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	/* gap: 20px; */
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	
+}
+
+.big-text{
+	margin-bottom:5px;
+	font-size: 2.5rem;
+	font-weight: bolder;
+}
+
+.countdown-el{
+	padding-bottom: 20px;
+	width: 100px;
+}
+
+
+
+hr{
+	width: 50px;
+	color: beige;
+	}
+
+@media all and (min-width: 500px) and (max-width: 3624px) {
+	
+	*{
+		overflow: hidden;
+	}
+
+	.container{
+		height: 100vh;
+		width: 100vw;
+	}
+	
+	.container h1{
+		font-size: 3rem;
+	}
+	
+	.countdown-container{
+		flex-wrap: nowrap;
+		padding: 0px 50px 40px 50px;
+	}
+	
+	.big-text{
+		margin-bottom:5px;
+		font-size: 3.3rem;
+		font-weight: bolder;
+		
+	}
+	
+	.countdown-el{
+		width: 100%;
+	
+	}
+		
+}
